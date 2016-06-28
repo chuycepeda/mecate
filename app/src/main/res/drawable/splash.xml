@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@color/clear"/>
+
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:src="@drawable/psd_mainlogo_city"/>
+    </item>
+
+</layer-list>

@@ -5,39 +5,29 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:weightSum="1"
+    android:background="#FFF">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@mipmap/ic_smart_cities"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/city"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Smart Cities"
-        android:textStyle="italic"
-        android:textSize="40dp"
-        android:layout_marginBottom="24dp"
-        android:textColor="#FF8C00"
-        android:layout_gravity="center_horizontal" />
+        app:srcCompat="@drawable/psd_mainlogo_city"
+        android:id="@+id/imageView4" />
 
-
-    <TextView
-        android:layout_width="wrap_content"
+    <Space
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:id="@+id/textViewEmail"
-        android:layout_gravity="center_horizontal" />
-
-    <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:singleLine="true"/>
+        android:layout_weight="0.33" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/nombre"
         android:id="@+id/textViewName"
@@ -49,9 +39,22 @@
         android:layout_height="wrap_content"
         android:singleLine="true"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:id="@+id/textViewEmail"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/password"
         android:id="@+id/textViewPassword"
@@ -63,11 +66,19 @@
             android:inputType="textPassword"
             android:singleLine="true"/>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45" />
+
     <Button
         android:id="@+id/btnRegistration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Crear"
-        android:layout_gravity="center_horizontal"></Button>
+        android:text="@string/button_registration"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button"
+        android:textColor="@color/clear"
+        android:background="@color/colorAccent"></Button>
 
 </LinearLayout>
